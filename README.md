@@ -8,4 +8,5 @@ python3 googlemapskey.py KEY
 ![Ekran Resmi 2023-08-16 14 11 16](https://github.com/mehmetserifpasa/google_maps_key_check/assets/25556230/78aa591a-dfb0-455e-bb63-e1640b7c5883)
 
 # Referance
-https://github.com/streaak/keyhacks#Google-Maps-API-key
+* https://github.com/streaak/keyhacks#Google-Maps-API-key
+* https://developers.google.com/maps/apis-by-platform?hl=tr
