@@ -35,15 +35,15 @@ def check_key(desc, url, key):
 	req = requests.get(url + str(key))
 	if 'json' in req.headers['Content-Type']:
 		if ('errorMessage' in str(req.content)  or 'error_message' in str(req.content) or 'error' in str(req.content)):
-			print("[-] " + url +"\n" + split)
+			print("["+ str(desc) +"] " + url +"\n" + split)
 		else:
-			print(color.WARNING + "[+] " + url + key +"\n" + color.ENDC + split)
+			print(color.WARNING + "["+ str(desc) +"] " + url + key +"\n" + color.ENDC + split)
 
 	else:
 		if req.status_code == 200:
-			print(color.WARNING + "[+] " + url + key +"\n" + color.ENDC + split )
+			print(color.WARNING + "["+ str(desc) +"] " + url + key +"\n" + color.ENDC + split )
 		else:
-			print("[-] " + url + "\n" + split)
+			print("["+ str(desc) +"] " + url + "\n" + split)
 
 
 
